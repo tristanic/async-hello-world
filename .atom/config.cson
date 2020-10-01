@@ -1,0 +1,18 @@
+# Project-specific settings file for Atom editor. Requires the atomic-management
+# package.
+
+"*":
+  "file-header":
+    autoAddingHeaderOnSaving: false
+    copyright: "2020 Tristan Croll"
+    dateTimeFormat: "DD-MMM-YYYY"
+    email: "tic20@cam.ac.uk"
+    ignoreListForAutoUpdateAndAddingHeader: [
+      "text.plain.null-grammar"
+      "text.html.basic"
+      "source.gfm"
+      "text.plain"
+    ]
+    license: "MIT"
+    realname: "Tristan Croll"
+    username: "tic20"
