@@ -1,11 +1,3 @@
-# @Author: Tristan Croll <tic20>
-# @Date:   30-Sep-2020
-# @Email:  tic20@cam.ac.uk
-# @Last modified by:   tic20
-# @Last modified time: 30-Sep-2020
-# @License: Free for non-commercial use (see license.pdf)
-# @Copyright: 2016-2019 Tristan Croll
-
 from . import simple_async
 
 def do_something_slow_with_callbacks(session, mgr, time):
