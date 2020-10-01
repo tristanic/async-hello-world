@@ -80,3 +80,11 @@ do_something_slow_with_callbacks(session, foo, 5)
         # Will print the thread result to the log after 5 seconds, with no
         # interruption to the GUI.
 ```
+
+One very important point if you wish to use this approach in earnest within
+ChimeraX: operations on its core C++ `atomstruct` objects (`Atom`, `Bond`,
+`Residue` etc.) are **not** thread safe. If you wish to have a thread running
+while you don't have complete control over what's happening in the main thread
+(e.g. across multiple iterations of the main graphics loop) you should make
+copies of the properties your function needs. Otherwise, deletion of an atom
+while your thread is running will kill the application.
