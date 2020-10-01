@@ -10,7 +10,7 @@ from . import simple_async
 
 def do_something_slow_with_callbacks(session, mgr, time):
     def print_result(mgr):
-        print(mgr.get_asynchronous_result())
+        session.logger.info(mgr.get_asynchronous_result())
     delayed_reaction(session.triggers, "new frame",
         mgr.do_something_slow_asynchronously, [time],
         mgr.thread_done,
