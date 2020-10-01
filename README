@@ -1,0 +1,2 @@
+A super-simple "Hello World" style demonstration of the use of C++11 threading
+via std::async and how to interact with it via Python.
