@@ -54,7 +54,9 @@ Change to the directory containing `bundle_info.xml`.
 (Linux or MacOS) if you have a release version of ChimeraX:
 
 `export RELEASE=1`
+
 (Linux) `scl enable devtoolset-3 bash`
+
 `make app-install`
 
 (Windows)
